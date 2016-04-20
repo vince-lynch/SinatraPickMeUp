@@ -76,11 +76,12 @@ $(function() {
  ////// ON THEM PRESSING THE RETURN KEY
     $(document).keypress(function(e) {
         if(e.which == 13) {
+            console.log("enter key pressed");
        
             var text = $('textarea').val();
             var initialPage = location.pathname;
             $go = text;
-            location.replace('http://localhost:4567/' + text);
+            location.replace("/" + text);
 
            
         }
